@@ -1,3 +1,4 @@
+import React from "react";
 function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="fixed w-full bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center z-50">
