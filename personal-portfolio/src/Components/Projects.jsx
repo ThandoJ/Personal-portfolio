@@ -1,22 +1,40 @@
 import React from "react";
-import project1 from "../assets/project1.jpg"
-import project2 from "../assets/project2.jpg"
+import digitalClock from "../assets/digital-clock.png"
+import restaurant from "../assets/restaurant.png"
+import expenseTracker from "../assets/expense-tracker.png"
+import quizApplication from "../assets/quiz-application.png"
 
 function Projects() {
   const projects = [
     {
       title: "Digital Clock Application",
       description: "It is a simple digital clock using HTML, CSS, and JavaScript that displays the current time and updates automatically every second.",
-      image: project1,
-      github: "https://github.com/yourusername/project1",
-      live: "https://yourproject1.com"
+      image: digitalClock,
+      github: "https://github.com/ThandoJ/Digital-clock.git",
+      live: "https://digital-clock-9xpdx0yxs-thando-jasops-projects.vercel.app/"
     },
     {
       title: "Restaurant Website",
-      description: "The goal of this project was to create a redesigned version of an existing business website using Bootstrap.It's a multi-topic quiz app where users can take quizzes, see their scores, and track their performance over time",
-      image: project2,
-      github: "https://github.com/yourusername/project2",
-      live: "https://yourproject2.com"
+      description: "The goal of this project was to create a redesigned version of an existing business website using Bootstrap.",
+      image: restaurant,
+      github: "https://github.com/ThandoJ/website-recreation-projectt.git",
+      live: "https://pizza-cafe-redesign-website-oorg.vercel.app/"
+    },
+
+    {
+      title: "Quiz App",
+      description: "It's a multi-topic quiz app where users can take quizzes, see their scores, and track their performance over time.",
+      image: quizApplication,
+      github: "https://github.com/ThandoJ/Quiz.git",
+      live: "https://quiz-eight-tan-97.vercel.app/"
+    },
+
+    {
+      title: "Financial tracker",
+      description: "A simple financial tracker application that allows users to manage their income and expenses.",
+      image: expenseTracker,
+      github: "https://github.com/ThandoJ/expense-tracker.git",
+      live: "https://expense-tracker-9xpdx0yxs-thando-jasops-projects.vercel.app/"
     }
   ]
 
