@@ -1,16 +1,16 @@
 import React from "react";
 function Skills() {
-  const skills = ["HTML", "CSS", "JavaScript", "React"]
+  const skills = ["React", "JavaScript", "Tailwind", "Node.js", "Git"]
 
   return (
-    <section id="skills" className="py-24 bg-gray-100 dark:bg-gray-800 text-center">
-      <h2 className="text-4xl font-bold mb-10">Skills</h2>
+    <section id="skills" className="py-24 px-6 border-t border-gray-800 text-center">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-12">Skills</h2>
 
       <div className="flex flex-wrap justify-center gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="px-6 py-3 bg-white dark:bg-gray-700 rounded-xl shadow hover:scale-110 transition"
+            className="px-6 py-3 sm:px-8 sm:py-4 bg-gray-900 border border-gray-700 rounded-xl hover:border-blue-500 transition"
           >
             {skill}
           </div>

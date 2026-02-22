@@ -1,31 +1,75 @@
 import React from "react";
+import project1 from "../assets/project1.jpg"
+import project2 from "../assets/project2.jpg"
+
 function Projects() {
   const projects = [
-    { title: "Digital Clock Application", description: " It is a simple digital clock using HTML, CSS, and JavaScript that displays the current time and updates automatically every second." },
-    { title: "Restaurant Website", description: "The goal of this project was to create a redesigned version of an existing business website using Bootstrap. " },
-    { title: "Quiz Application", description: " It's a multi-topic quiz app where users can take quizzes, see their scores, and track their performance over time. " },
+    {
+      title: "Digital Clock Application",
+      description: "It is a simple digital clock using HTML, CSS, and JavaScript that displays the current time and updates automatically every second.",
+      image: project1,
+      github: "https://github.com/yourusername/project1",
+      live: "https://yourproject1.com"
+    },
+    {
+      title: "Restaurant Website",
+      description: "The goal of this project was to create a redesigned version of an existing business website using Bootstrap.It's a multi-topic quiz app where users can take quizzes, see their scores, and track their performance over time",
+      image: project2,
+      github: "https://github.com/yourusername/project2",
+      live: "https://yourproject2.com"
+    }
   ]
 
   return (
-    <section id="projects" className="py-24 px-6">
-      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+    <section id="projects" className="py-24 px-6 border-t border-gray-800">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-16 text-center">Projects</h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition"
-          >
-            <div className="h-40 bg-gray-300 rounded mb-4"></div>
-            <h3 className="text-xl font-bold">{project.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mt-2">
-              {project.description}
-            </p>
-          </div>
-        ))}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500 transition duration-300"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-56 sm:h-64 md:h-72 object-cover"
+              />
+
+              <div className="p-8">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">{project.title}</h3>
+                <p className="text-gray-400 mb-6">{project.description}</p>
+
+                <div className="flex flex-wrap gap-4">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-5 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-5 py-2 border border-gray-600 rounded hover:border-blue-500 transition"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
 }
 
 export default Projects
+
+
+   

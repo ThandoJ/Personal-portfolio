@@ -1,9 +1,10 @@
 import React from "react";
+
+
 function Footer() {
   return (
-    <footer className="bg-black text-white text-center p-6">
-      <p>© {new Date().getFullYear()} Thando Jasop</p>
-      <p className="text-sm text-gray-400">Built with React & Tailwind</p>
+    <footer className="py-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+      © {new Date().getFullYear()} Thando Jasop. All rights reserved.
     </footer>
   )
 }
