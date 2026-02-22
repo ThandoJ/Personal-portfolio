@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile.jpg"
+import personal from "../assets/personal.png"
 
 function Hero() {
   return (
@@ -28,8 +28,8 @@ function Hero() {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src={profile}
-            alt="Profile"
+            src={personal}
+            alt="Personal"
             className="w-64 sm:w-72 md:w-80 h-auto rounded-2xl shadow-2xl border border-gray-800"
           />
         </div>
