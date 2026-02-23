@@ -33,8 +33,8 @@ function Projects() {
       title: "Financial tracker",
       description: "A simple financial tracker application that allows users to manage their income and expenses.",
       image: expenseTracker,
-      github: "https://github.com/ThandoJ/expense-tracker.git",
-      live: "https://expense-tracker-9xpdx0yxs-thando-jasops-projects.vercel.app/"
+      github: "https://github.com/ThandoJ/Expense-tracker.git",
+      live: "https://expense-tracker-fd5mzt5sd-thando-jasops-projects.vercel.app"
     }
   ]
 

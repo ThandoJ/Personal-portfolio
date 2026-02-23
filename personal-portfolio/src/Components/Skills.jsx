@@ -1,6 +1,6 @@
 import React from "react";
 function Skills() {
-  const skills = ["React", "JavaScript", "Tailwind", "Node.js", "Git"]
+  const skills = ["React","HTML","CSS", "JavaScript", "Tailwind", "Problem Solving", "Communication","Leadership","Project Management","Teamwork","Critical Thinking","Adaptability","Time Management","GitHub"]
 
   return (
     <section id="skills" className="py-24 px-6 border-t border-gray-800 text-center">
